@@ -1,0 +1,11 @@
+{
+  "name": "anonymoose",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "go": "tsc && node ./tests/main.js",
+    "p": "tsc && yarn publish"
+  }
+}
