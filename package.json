@@ -5,7 +5,8 @@
   "license": "MIT",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "go": "tsc && node ./tests/main.js",
+    "clean": "rmdir .\\dist /s /q",
+    "go": "yarn clean && tsc && node ./tests/main.js",
     "p": "tsc && yarn publish"
   }
 }

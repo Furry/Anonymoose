@@ -28,7 +28,9 @@
    - .int()
    - .templateInt()
  - .Web
-   - .userAnget()
+   - .userAgent()
+ - .Characters
+   - .randomChars()
 
 ## Motive
 With the tragic compromise of the library Faker, this package will act as a work-in-progress replacement, with strict typescript typings & support, as well as constant feature additions based on pull requests. Best part? This library is guarinteed not to go nuclear.
@@ -45,11 +47,20 @@ Anonymoose.Person.firstName();
 Anonymoose.Web.UserAgent();
 > Mozilla/8.8 (Macintosh; x64) Blink/8.2.9
 
+
 Anonymoose.Numeric.templateInt("X", "A few random numbers are ###, ##, and ##.##!");
 > "A few random numbers are 261, 75, and 46.21!"
 
-Anonymoose.Utils.pick(["5", 3, "24", 7])
+
+Anonymoose.Utils.pick(["5", 3, "24", 7]);
 > "24"
+
+// Base64 | AlphaNumericUpper | AlphaNumericLower | AlphaNumericUpperLower | AlphabeticUpper | ect...
+Anonymoose.Characters.randomChars(16, "Base64");
+> "sPqv36+ng4kFCX9z0"
+
+Anonymoose.Characters.randomChars(16, "Ef");
+> "EffEffEEEffEffEE"
 ```
 
 
